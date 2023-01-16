@@ -1,7 +1,7 @@
 'use strict';
 var elem = document.getElementsByTagName('input');
 for (var i = 0; i < elem.length; i++) {
-	elem[i].addEventListener('focus', func);
+	elem[i].addEventListener('blur', func);
 }
 function func() {
 	var given = this.dataset.length;
